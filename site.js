@@ -2,6 +2,33 @@
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 
+  const copyButton = document.getElementById('copy-xmr');
+  const copyStatus = document.getElementById('copy-status');
+  if (copyButton) {
+    copyButton.addEventListener('click', async () => {
+      const target = document.getElementById(copyButton.dataset.copyTarget);
+      if (!target) return;
+      const text = target.textContent.trim();
+      let copied = false;
+      try {
+        await navigator.clipboard.writeText(text);
+        copied = true;
+      } catch (_) {
+        const range = document.createRange();
+        range.selectNodeContents(target);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        try { copied = document.execCommand('copy'); } catch (_) { /* Leave the address selected. */ }
+      }
+      if (copyStatus) {
+        copyStatus.textContent = copied ? 'COPIED TO CLIPBOARD' : 'ADDRESS SELECTED — PRESS CTRL+C';
+        clearTimeout(copyButton._t);
+        copyButton._t = setTimeout(() => { copyStatus.textContent = ''; }, 3000);
+      }
+    });
+  }
+
   const items = Array.isArray(window.CDL_PRODUCTS) ? window.CDL_PRODUCTS : [];
   const section = document.getElementById('catalogue');
   const grid = document.getElementById('product-grid');
