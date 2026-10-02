@@ -1,6 +1,25 @@
 (() => {
+  const extraStyles = document.createElement('link');
+  extraStyles.rel = 'stylesheet';
+  extraStyles.href = 'tools.css';
+  document.head.append(extraStyles);
+
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
+
+  const menu = document.querySelector('.tools-menu');
+  const trigger = document.querySelector('.tools-trigger');
+  if (menu && trigger) {
+    const close = () => { menu.classList.remove('open'); trigger.setAttribute('aria-expanded', 'false'); };
+    trigger.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const open = !menu.classList.contains('open');
+      menu.classList.toggle('open', open);
+      trigger.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', (event) => { if (!menu.contains(event.target)) close(); });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { close(); trigger.focus(); } });
+  }
 
   const items = Array.isArray(window.CDL_PRODUCTS) ? window.CDL_PRODUCTS : [];
   const section = document.getElementById('catalogue');
