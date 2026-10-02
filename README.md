@@ -1,37 +1,59 @@
-# Circuit Drift Lab website
+# Circuit Drift Labs
 
-A static website for GitHub Pages. The working brand name is **Circuit Drift Lab**. Everything loads from this folder: no package manager, framework, build step, tracking, or stock images.
+Circuit Drift Labs is a static GitHub Pages site for open-source audio tools, instruments, effects and browser utilities for producers and DJs.
 
-## Preview on your computer
+Live site: https://circuitdriftlabs.djshellshoxxx.github.io/
 
-Open `index.html` in a browser, or serve it locally with `python -m http.server 8000` and open `http://localhost:8000`.
+## Browser tools
 
-## Publish with GitHub Pages
+The homepage includes a persistent **Tools** dropdown and dedicated browser-tools section linking the current utility suite:
 
-For a site at `https://djshellshoxxx.github.io/`, copy the **contents** of this folder to a new public repository named `djshellshoxxx.github.io`. On your Windows PC, after extracting the ZIP and opening PowerShell inside the extracted folder:
+- TrackStats — local music-library analytics
+- Transposition Calculator — key, pitch, BPM and sample calculations
+- MIDItest — MIDI monitoring and controller diagnostics
+- LoudnessBatch — batch loudness/reference analysis
+- PartyPosterGen — fast rave, DJ and party-poster creation
 
-```powershell
-git init -b main
-git add .
-git commit -m "Build Circuit Drift Lab website"
-gh repo create djshellshoxxx.github.io --public --source=. --remote=origin --push
+A separate **Experiments** area links:
+
+- Binaural Web Beats
+- BabbleForge
+
+## Site design
+
+The site uses a dark technical workbench aesthetic with a compact Circuit Drift Labs mark. The current mark uses dark blue, black and gray rather than the earlier orange/teal icon treatment, while the rest of the existing typography and site structure are preserved.
+
+Everything is static: no package manager, framework, build step or account system is required.
+
+## Preview locally
+
+```bash
+python -m http.server 8000
 ```
 
-Then open the repository's **Settings → Pages**. Choose **Deploy from a branch**, select **main** and **/(root)**, then save. GitHub will show the live address on that page after deployment. If a repository with that name already exists, use a different repository name and follow the same Pages settings; all asset paths are relative and will work under a project URL.
+Then open `http://localhost:8000`.
 
-## Add plugins later
+## Adding releases
 
-Edit `products.js`. Uncomment the sample and add one object per published plugin with `name`, `type`, `description`, and a public `url`. The release section only appears when it has entries. There are no invented product names, release dates, prices, compatibility claims, or download links in this version.
-
-Change the brand name and company copy directly in `index.html`; the palette and layout are in `styles.css`. Run `python tools/generate_art.py` to regenerate the SVG drawings if you edit their source. The artworks use the colors and flat technical style from `theme.md`.
+Edit `products.js` to add published plugin/instrument releases. Browser utilities are maintained separately in the Tools section in `index.html` so they remain clearly distinguished from instruments/effects.
 
 ## Files
 
-- `index.html` — page structure and copy
-- `styles.css` — responsive design
-- `site.js`, `products.js` — optional release cards
-- `assets/*.svg` — original vector drawings
-- `tools/generate_art.py` — reproducible vector art source
-- `.nojekyll` — serves the static files directly on GitHub Pages
+- `index.html` — page structure, browser-tools section and shared navigation
+- `styles.css` — original site layout/theme
+- `tools.css` — tools dropdown and utility-card styling
+- `site.js` — release cards plus accessible Tools dropdown behavior
+- `products.js` — optional instrument/effect release cards
+- `assets/*.svg` — original technical vector drawings and Circuit Drift Labs mark
+- `docs/superpowers/specs/` — ecosystem design specifications
+- `.nojekyll` — direct GitHub Pages serving
 
-The chosen name is a working title. Before using it commercially, check domain and trademark availability for your markets.
+## Related repositories
+
+- https://github.com/djshellshoxxx/trackstats
+- https://github.com/djshellshoxxx/TranspositionCalc
+- https://github.com/djshellshoxxx/Miditest
+- https://github.com/djshellshoxxx/loudnessbatch
+- https://github.com/djshellshoxxx/PartyPosterGen
+
+The project remains open-source-focused. Before commercial use of branding, perform the appropriate domain/trademark checks for the relevant markets.
