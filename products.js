@@ -5,5 +5,11 @@ window.CDL_PRODUCTS = [
     type: 'Browser Utility',
     description: 'Inspect saved DAW projects locally, recover plugin references, explain what they do and compare them with an installed plugin inventory.',
     url: 'https://djshellshoxxx.github.io/pluginchek/'
+  },
+  {
+    name: 'Terrain Loom',
+    type: 'Browser Instrument',
+    description: 'Experimental polyphonic wave-terrain synth with QWERTY performance modes, MIDI learn, touch control, recording, and an optional local webcam motion field.',
+    url: 'https://djshellshoxxx.github.io/websynth/'
   }
 ];
