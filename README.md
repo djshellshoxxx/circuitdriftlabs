@@ -19,6 +19,35 @@ A separate **Experiments** area links:
 - Binaural Web Beats
 - BabbleForge
 
+## Complete audio project index
+
+The homepage now includes a single project index linking every verified audio-related repository in the Circuit Drift Labs ecosystem, plus live GitHub Pages builds where they are known to exist.
+
+Repositories currently indexed:
+
+- trackstats
+- TranspositionCalc
+- Miditest
+- loudnessbatch
+- browsertonegen
+- binauralwebeats
+- babbleforge
+- pluginchek
+- websynth
+- visualsynth
+- luthier
+- shelloop
+- snaircreator
+- robodrummer
+- ReverseVerb
+- interfearance-vst
+- reverseback
+- groovescripting
+- AUDIO-COMMAND-LINE-TOOLS
+- SideForge
+- GapFill
+- PartyPosterGen
+
 ## Site design
 
 The site uses a dark technical workbench aesthetic with a compact Circuit Drift Labs mark. The current mark uses dark blue, black and gray rather than the earlier orange/teal icon treatment, while the rest of the existing typography and site structure are preserved.
