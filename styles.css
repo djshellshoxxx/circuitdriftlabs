@@ -4,3 +4,40 @@
 @media(max-width:760px){.site-header{height:72px;gap:14px}.brand{font-size:12px}.brand img{width:28px}.main-nav{gap:14px}.main-nav a{font-size:9px}.header-link{display:none}.hero{padding-left:0;grid-template-columns:1fr}.hero-copy{padding:75px 24px 55px}.hero h1{font-size:clamp(58px,10vw,84px);max-width:620px}.hero-meta{margin-top:50px}.hero-art{min-height:480px;border-left:0;border-top:1px solid var(--edge)}.hero-art>img{max-width:530px}.discipline-grid{grid-template-columns:1fr}.discipline-card{min-height:300px}.card-pattern{height:95px}.section-space{padding-top:78px;padding-bottom:78px}.section-heading{align-items:start;flex-direction:column}.method-section,.lab-section{grid-template-columns:1fr}.lab-index{min-height:unset}.lab-number{display:none}.method-display{min-height:320px}.site-footer{flex-wrap:wrap}.site-footer>p{order:3;width:100%;margin:0}}
 @media(max-width:480px){.site-header{padding:0 20px}.main-nav a[href='#method']{display:none}.hero h1{font-size:54px}.hero-actions{gap:18px;flex-wrap:wrap}.hero-meta{gap:10px;font-size:8px}.hero-art{min-height:365px}.readout{left:16px;right:16px;font-size:7px}.section-rule{font-size:7px}.section-heading h2,.method-copy h2,.lab-main h2{font-size:40px}.product-grid{grid-template-columns:1fr}.site-footer>div:last-child{width:100%;justify-content:space-between}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+
+/* Complete audio-project index */
+.project-index-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line, #303640);
+  border-left: 1px solid var(--line, #303640);
+}
+.project-index-card {
+  min-height: 190px;
+  padding: 24px;
+  border-right: 1px solid var(--line, #303640);
+  border-bottom: 1px solid var(--line, #303640);
+  display: flex;
+  flex-direction: column;
+}
+.project-index-card h3 { margin: 0 0 10px; }
+.project-index-card p { margin: 0 0 20px; }
+.project-links {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.project-links a {
+  font-weight: 700;
+  text-decoration: none;
+}
+.project-links a:hover,
+.project-links a:focus-visible { text-decoration: underline; }
+@media (max-width: 900px) {
+  .project-index-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .project-index-grid { grid-template-columns: 1fr; }
+}
