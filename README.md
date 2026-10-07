@@ -34,6 +34,7 @@ Repositories currently indexed:
 - babbleforge
 - pluginchek
 - websynth
+- 3xoso
 - visualsynth
 - luthier
 - shelloop
