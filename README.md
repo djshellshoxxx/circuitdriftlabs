@@ -78,6 +78,10 @@ Edit `products.js` to add published plugin/instrument releases. Browser utilitie
 - `docs/superpowers/specs/` — ecosystem design specifications
 - `.nojekyll` — direct GitHub Pages serving
 
+## Wiki
+
+Wiki source pages are in [docs/wiki/](docs/wiki/Home.md): site guide, developer guide, design rationale and codebase map.
+
 ## Related repositories
 
 - https://github.com/djshellshoxxx/trackstats
