@@ -1,8 +1,8 @@
 # Circuit Drift Labs
 
-Circuit Drift Labs is a static GitHub Pages site for open-source audio tools, instruments, effects and browser utilities for producers and DJs.
+Circuit Drift Labs is a static GitHub Pages site for open-source audio tools, instruments, effects and browser utilities for producers and DJs, with selected experimental development wings.
 
-Live site: https://circuitdriftlabs.djshellshoxxx.github.io/
+Live site: https://djshellshoxxx.github.io/circuitdriftlabs/
 
 ## Browser tools
 
@@ -49,6 +49,10 @@ Repositories currently indexed:
 - GapFill
 - PartyPosterGen
 
+## Development wings
+
+- [Crypto Libertarian](https://djshellshoxxx.github.io/circuitdriftlabs/development/crypto-libertarian/) — experimental privacy and civic software, featuring [QuietVote](https://github.com/djshellshoxxx/quietvote). QuietVote remains a draft, unaudited, and not ready for real votes; a hosted demo is not live.
+
 ## Site design
 
 The site uses a dark technical workbench aesthetic with a compact Circuit Drift Labs mark. The current mark uses dark blue, black and gray rather than the earlier orange/teal icon treatment, while the rest of the existing typography and site structure are preserved.
@@ -69,12 +73,13 @@ Edit `products.js` to add published plugin/instrument releases. Browser utilitie
 
 ## Files
 
-- `index.html` — page structure, browser-tools section and shared navigation
+- `index.html` — page structure, browser-tools section, development-wing feature and shared navigation
 - `styles.css` — original site layout/theme
 - `tools.css` — tools dropdown and utility-card styling
 - `site.js` — release cards plus accessible Tools dropdown behavior
 - `products.js` — optional instrument/effect release cards
 - `assets/*.svg` — original technical vector drawings and Circuit Drift Labs mark
+- `development/crypto-libertarian/index.html` — experimental privacy/civic software development wing
 - `docs/superpowers/specs/` — ecosystem design specifications
 - `.nojekyll` — direct GitHub Pages serving
 
