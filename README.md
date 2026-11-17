@@ -65,7 +65,7 @@ Everything is static: no package manager, framework, build step or account syste
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Then open `http://localhost:8000`. To preview pages that use absolute `/circuitdriftlabs/` asset paths, serve the parent directory of a checkout named `circuitdriftlabs` and open `http://localhost:8000/circuitdriftlabs/`.
 
 ## Adding releases
 
@@ -92,3 +92,11 @@ Edit `products.js` to add published plugin/instrument releases. Browser utilitie
 - https://github.com/djshellshoxxx/PartyPosterGen
 
 The project remains open-source-focused. Before commercial use of branding, perform the appropriate domain/trademark checks for the relevant markets.
+
+## Site screenshots
+
+These views were captured on the documentation branch dated 2026-10-28.
+
+- [Home page](docs/screenshots/home.png)
+- [Divisions](docs/screenshots/divisions.png)
+- [Institute](docs/screenshots/institute.png)
