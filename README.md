@@ -12,6 +12,7 @@ The homepage includes a persistent **Tools** dropdown and dedicated browser-tool
 - Transposition Calculator — key, pitch, BPM and sample calculations
 - MIDItest — MIDI monitoring and controller diagnostics
 - LoudnessBatch — batch loudness/reference analysis
+- [WebMicrophone](https://djshellshoxxx.github.io/webmicrophone/) — microphone recording, parametric EQ, cleanup presets, live analysis and local audio rendering
 - PartyPosterGen — fast rave, DJ and party-poster creation
 
 A separate **Experiments** area links:
@@ -29,6 +30,7 @@ Repositories currently indexed:
 - TranspositionCalc
 - Miditest
 - loudnessbatch
+- webmicrophone
 - browsertonegen
 - binauralwebeats
 - babbleforge
@@ -89,6 +91,7 @@ Edit `products.js` to add published plugin/instrument releases. Browser utilitie
 - https://github.com/djshellshoxxx/TranspositionCalc
 - https://github.com/djshellshoxxx/Miditest
 - https://github.com/djshellshoxxx/loudnessbatch
+- https://github.com/djshellshoxxx/webmicrophone
 - https://github.com/djshellshoxxx/PartyPosterGen
 
 The project remains open-source-focused. Before commercial use of branding, perform the appropriate domain/trademark checks for the relevant markets.
