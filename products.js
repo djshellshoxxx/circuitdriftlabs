@@ -1,6 +1,12 @@
 // Public releases and browser tools from Circuit Drift Lab.
 window.CDL_PRODUCTS = [
   {
+    name: 'WebSoundEdit',
+    type: 'Browser Audio Editor',
+    description: 'Edit selected waveforms, arrange tracks, shape loops and sidechain rhythms, convert audio formats and automate the same engine through a local scripting API.',
+    url: 'https://djshellshoxxx.github.io/websoundedit/'
+  },
+  {
     name: 'PluginChek',
     type: 'Browser Utility',
     description: 'Inspect saved DAW projects locally, recover plugin references, explain what they do and compare them with an installed plugin inventory.',
